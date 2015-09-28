@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>esri-leaflet</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>ESRI Leaflet</name>
     <description>WebJar for ESRI Leaflet</description>
     <url>http://webjars.org</url>
@@ -39,7 +39,7 @@
         <url>http://github.com/webjars/esri-leaflet</url>
         <connection>scm:git:https://github.com/webjars/esri-leaflet.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/esri-leaflet.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>esri-leaflet-1.0.0</tag>
     </scm>
     
     <dependencies>
@@ -62,10 +62,10 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${destDir}"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
